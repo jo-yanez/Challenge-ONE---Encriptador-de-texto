@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+		<title>Encriptador de Texto</title>
+	</head>
+	<body>
+		<main>
+			<section id="seccion_lateral">
+				<div id="div_logo">
+					<img id="logo_alura" src="imagenes/logo.png" alt="Logo de Alura Latam">
+				</div>
+				<section id="seccion_encriptacion">
+					<div id="div_caja_texto">
+						<textarea id="caja_texto" cols="20" rows="4" placeholder="Ingrese el texto aquí" autofocus></textarea>
+					</div>
+					<div id="div_advertencia">
+						<div id="div_caja_advertencia">
+							<img src="imagenes/bi_exclamation-circle.svg">
+							<p id="advertencia_inicial">Sólo letras minúsculas y sin acentos</p>
+						</div>
+					</div>
+					<div id="div_botones">
+						<button id="boton_encriptar" class="boton">Encriptar</button>
+						<button id="boton_desencriptar" class="boton">Desencriptar</button>
+					</div>
+				</section>
+			</section>
+			<section id="seccion_lateral">
+				<div id="div_desencriptar">
+					<div id="div_imagen_texto">
+						<img id="imagen" src="imagenes/avatar.png" alt="Avatar de la encriptacion"></img>
+						<textarea id="caja_texto_respuesta" cols="20" rows="4"></textarea>
+					</div>
+
+					<div id="advertencia_respuesta">
+						<h2>Ningún mensaje fue encontrado</h2>
+						<p>Ingresa el texto que desees encriptar o desencriptar.</p>
+					</div>
+					<div id="div_boton_copiar" class="ocultar">
+						<button id="boton_copiar" class="boton">Copiar</button>
+					</div>
+				</div>
+			</section>
+
+			<script src="funciones.js"></script>
+		</main>
+	</body>
+
+</html>
