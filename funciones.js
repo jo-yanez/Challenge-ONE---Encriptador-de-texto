@@ -103,7 +103,9 @@ function mostrarAdvertencia(mensaje) {
     advertencia.textContent = mensaje;
     document.getElementById("div_caja_advertencia").classList.add("caja_error");
     document.getElementById("caja_texto").focus();
-    imagen.style.display = "block";
+    if (window.innerWidth > 770) {
+        imagen.style.display = "block";
+    }
     cajaMensajeNoEncontrado.style.display = "block";
     cajaTextoRespuesta.style.display = "none";
     cajaBotonCopiar.style.display = "none";
@@ -111,7 +113,12 @@ function mostrarAdvertencia(mensaje) {
 
 
 function actualizarInterfaz() {
-    imagen.style.display = "none";
+    if (window.innerWidth > 770) {
+        imagen.style.display = "none";
+    } else {
+        imagen.style.display = "none";
+        document.getElementById('div_imagen_texto').style.display = "block";
+    }
     cajaMensajeNoEncontrado.style.display = "none";
     cajaTextoRespuesta.style.display = "block";
 }
